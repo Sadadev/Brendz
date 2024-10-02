@@ -1,0 +1,757 @@
+/* Reset */
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* body styling */
+html,body {
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+/* links */
+a {
+
+    text-decoration: none;
+
+}
+
+/* paeragraphs */
+
+p {
+
+    margin: 0.75rem 0;
+
+}
+
+/* utlities classes */
+.text-primary {
+
+  color: #f29836;
+
+}
+
+.text-secondary{
+  color:#7a1b26;
+}
+
+.primary-background{
+  background-color: #f29836;
+  color: #fff;
+}
+
+.secondary-background{
+  background-color: #7a1b26;
+  color: #fff;
+}
+
+.container {
+
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.l-heading {
+
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+
+}
+
+.m-heading {
+
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+
+}
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+.py-4 {padding: 4rem 0;}
+
+.p-2 {
+
+  padding: 2rem;
+}
+
+.p-3 {
+
+  padding: 3rem;
+
+}
+
+.p-1 {
+
+  padding: 1.5rem;
+
+}
+
+.text-center {
+
+  text-align: center;
+
+}
+
+.list {
+
+  margin: 0.5rem 0;
+  list-style: none;
+
+}
+
+.list li {
+
+  padding: 0.5rem 0;
+  border-bottom: dotted #444 1px;
+
+}
+
+.lead {
+
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+
+}
+
+.bg-light {
+
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+
+  background: #333;
+  color: #fff;
+
+}
+
+.bg-primary {
+
+    background: #f29836;
+    color: #fff;
+
+}
+
+.btn {
+
+  display: inline-block;
+  color: #fff;
+  background: transparent;
+  padding: 0.7rem 2rem;
+  border: 1px solid #f29836;
+  border-radius: 5px;
+  transition: background 0.5s ease-in;
+}
+
+.btn:hover {
+
+  background: #f29836;
+
+}
+
+.btn-dark {
+  display: inline-block;
+    color: #fff;
+    background: transparent;
+    padding: 0.7rem 2rem;
+    border: 1px solid #7a1b26;
+    border-radius: 5px;
+    transition: background 0.5s ease-in;
+}
+
+.btn-dark:hover{
+  background: #7a1b26;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgba(122, 27, 38, 0.9);
+  overflow: hidden;
+  color: #fff;
+  z-index: 1;
+  padding: 1rem;
+}
+
+ 
+#navbar ul {
+
+display: flex;
+list-style: none;
+}
+
+#navbar ul li a {
+
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  transition: background 0.5s ease-in;
+
+}
+
+#navbar ul li a:hover {
+
+    background: #f29836;
+    border-radius: 5px;
+
+}
+
+
+/* showcase section */
+#showcase{
+
+    background: url('../img/showcase.jpg') no-repeat center center/cover ;
+    height: 100vh;
+    color: #fff;
+
+}
+
+#showcase .showcase-content-background {
+  /* overlay */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 65;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+#showcase .showcase-content-background .showcase-content {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+/* Who*/
+#who-items{
+  display: flex;
+  height: 400px;
+}
+
+#who-items div{
+  flex: 1;
+}
+
+#who-items #who-details{
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#who-items #who-details h2{
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+#who-items #who-details p{
+  padding: 0.5rem;
+}
+
+#who-items #who-img{
+  background-image: url(../img/who\ are\ we.jpg);
+  background-size: 100%;
+}
+
+
+
+/* Mission and Vision */
+.MandV-items{
+  display: flex;
+}
+
+.MandV-items div{
+  width: 33.3%;
+}
+
+.MandV-items .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.MandV-items .item h2{
+  font-size: 2rem;
+}
+
+/* Service Offerings */
+
+.carousel{
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider{
+  height: 100%;
+  display: flex;
+  width: 400%;
+}
+
+.slider section{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 2rem 0.5rem;
+  padding: 3.5rem;
+  color: #f29836;
+}
+
+.slider .item div{
+  background: rgba(122, 27, 38, 0.7);
+  padding: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+
+}
+
+.slider .item-1{
+  background: url(../img/exp2.jpg) no-repeat;
+  background-size: 100% 400px;
+}
+
+.slider .item-2 {
+  background: url(../img/residency.avif) no-repeat;
+  background-size: 100% 400px;
+}
+
+.slider .item-3 {
+  background: url(../img/OfficeSpace.avif) no-repeat;
+  background-size: 100% 400px;
+}
+
+.slider .item-4 {
+  background: url(../img/Integration.avif) no-repeat;
+  background-size: 100% 400px;
+}
+
+.controls .arrow{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.controls .left{
+  left: 10px;
+}
+
+.controls .right{
+  right: 10px;
+}
+
+.controls .arrow i{
+  color: #f29836;
+}
+
+.controls ul{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+}
+
+.controls ul li{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7a1b26;
+  border-radius: 50%;
+  margin: 10px;
+  background: #f29836;
+  cursor: pointer;
+}
+
+.controls ul li.selected{
+  background: transparent;
+}
+
+/* clients */
+#clients{
+  background: #f29836;
+}
+#clients .items {
+
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}
+
+#clients h2 {
+
+  margin-bottom: 1.5rem;
+
+}
+
+#clients .items img {
+
+  display: inline-block;
+  margin: auto;
+  width: 60%;
+
+}
+
+/* welcome section */
+
+.welcome{
+  background-color: #7a1b26;
+  height: 200x;
+  color: #f29836;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* footer section */
+#main-footer {
+
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+
+
+
+
+
+/* news page */
+#news{
+  background: #7a1b26;
+  color: #f29836;
+  width: 100%;
+  padding: 2rem;
+  line-height: 1.7rem;
+}
+
+
+
+
+
+
+/* About page */
+#about{
+  display: grid;
+  padding: 1rem;
+  grid-template-areas: 
+    'header header header'
+    'who who contact'
+    'value value value'
+    'team team team'
+  ;
+  grid-gap: 1rem;
+}
+
+#about header{
+  grid-area: header;
+  text-align: center;
+}
+
+#about main{
+  grid-area: who;
+  background: #f29836;
+  border-radius: 5px;
+  padding: 1.5rem;
+  color: #fff;
+  line-height: 1.7rem;
+}
+
+#about aside{
+  grid-area: contact;
+  padding: 2rem;
+  background: #7a1b26;
+  color: #fff;
+  border-radius: 5px;
+  
+  
+}
+
+#about aside li{
+  display: flex;
+  list-style: none;
+  margin: 1rem;
+  align-items: center;
+}
+
+#about aside li div{
+  margin: 1rem;
+}
+
+#about aside li a{
+  color: #fff;
+}
+
+#about aside li a:hover{
+  color: #f29836;
+}
+
+#about aside li i{
+  color: #f29836;
+}
+
+#about .valueProposition{
+  grid-area: value;
+  background: #7a1b26;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+#about .valueProposition img{
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+#about .work-team{
+  grid-area: team;
+  background: #f29836;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #fff;
+}
+
+#about .work-team .team-heading{
+  text-align: center;
+}
+
+#about .work-team .items{
+  background: #7a1b26;
+  color: #fff;
+  padding: 2rem;
+  line-height: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+#about .work-team #item-1 .item-details{
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+  font-size: 1.2em;
+}
+
+#about .work-team .items img{
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/* What Page */
+#timeline{
+  background: #7a1b26;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#timeline ul{
+  background: #7a1b26;
+  padding: 50px 0;
+}
+
+/* create line */
+#timeline ul li{
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+  list-style: none;
+}
+
+/* boxes */
+#timeline ul li div{
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 1rem;
+  background: #f29836;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* right side */
+#timeline ul li:nth-child(odd) div{
+  left: 40px;
+  transform: translate(200px, 0);
+}
+#timeline ul li:nth-child(even) div{
+  left: -434px;
+  transform: translate(-200px, 0);
+}
+
+/* dots */
+#timeline ul li:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: inherit;
+  transform: translatex(-50%);
+  border-radius: 50%;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Arrows base */
+#timeline div:before{
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Right side arrows */
+#timeline ul li:nth-child(odd) div:before{
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f29836 transparent transparent;
+}
+
+/* Left side arrows */
+#timeline ul li:nth-child(even) div:before{
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f29836;
+}
+
+/* show boxes */
+#timeline ul li.show div{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#timeline ul li.show::after{
+  background: #f29836;
+}
+
+
+
+
+
+
+/* Cultural Integration */
+.cultural-integration {
+  width: 100%;
+  background: #7a1b26;
+  color: #f29836;
+  padding: 1rem;
+}
+
+.cultural-integration ul {
+  padding: 0 1rem;
+  line-height: 1.7rem;
+}
+
+.cultural-integration .img img {
+  width: 400px;
+}
+
+
+
+
+/* Expartriate Mobility */
+.exp-mobility{
+  width: 100%;
+  background: #7a1b26;
+  color: #f29836;
+  padding: 1rem;
+}
+
+.exp-mobility ul{
+  padding: 0 1rem;
+  line-height: 1.7rem;
+}
+
+.exp-mobility .img img{
+  width: 400px;
+}
+
+
+
+
+/* Expatriate Residency */
+.exp-residency
+ {
+  width: 100%;
+  background: #7a1b26;
+  color: #f29836;
+  padding: 1rem;
+}
+
+.exp-residency
+ ul {
+  padding: 0 1rem;
+  line-height: 1.7rem;
+}
+
+.exp-residency
+ .img img {
+  width: 400px;
+}
+
+
+
+
+/* Office Space */
+.office-space {
+  width: 100%;
+  background: #7a1b26;
+  color: #f29836;
+  padding: 1rem;
+}
+
+.office-space ul {
+  padding: 0 1rem;
+  line-height: 1.7rem;
+}
+
+.office-space .img img {
+  width: 400px;
+}
+
+
+
+
